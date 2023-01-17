@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="external.css" />
+    <script src="external.js"></script>
+    <style>
+        body * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div {
+            border: 2px solid red;
+            margin: 5px;
+            padding: 10px;
+            background-color: white;
+        }
+        #bob ~ * {
+            background-color: blue;
+        }
+        a[target='_blank'] {
+
+        }
+        img[src='logo.gif'] {
+
+        }
+    </style>
+</head>
+<body>
+    <div id="john">
+        <div id="steve">
+            <div id="lee"></div>
+            <div id="bob"></div>
+            <div id="ella"></div>
+            <div id="ella"></div>
+            <div id="ella"></div>
+            <div id="ella"></div>
+
+        </div>
+        <div id="rohan" style="color: red;">
+            <div id="sal"></div>
+            <div id="emma">
+                <div id="tom">
+                    <div id="bill"></div>
+                </div>
+                <div id="raj"></div>
+            </div>
+        </div>
+    </div>
+    <p>Hello</p>
+    <a target="_blank" href="https://www.google.com">Google</a>
+    <img src="" />
+    <embed></embed>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/5_NMqSIzx-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <br /> <br /> <br />
+    <link />
+    <hr />
+
+    <header></header>
+    <section>
+        <aside>
+            <div></div>
+            <span></span>
+        </aside>
+    </section>
+    <fooTer></footer>
+
+    <pre>Hello W    orld</pre>
+</body>
+
+<b>Hello</b><i>there</i><u>html</u>
+<strong>Hello</strong><em>there</em><ins>html</ins>
+
+2<sup>2</sup><br>
+H<sub>2</sub>O --> 2H + O
+
+<center><mark>HTML</mark> stands for Hypertext <del>Marking</del><ins>Markup</ins> Language</center>
+
+<p>Hello my name is <span style="color: red;">Akash</span></p>
+<marquee>Hello World</marquee>
+
+
+<h1>banner Text</h1>
+<h2>Title 2</h2>
+<h3>Banner subtitle</h3>
+<h4>Title text</h4>
+<h5>Title text</h5>
+<h6>Title text</h6>
+
+
+<!-- ordered , unordered , descriptive -->
+
+<style>
+    
+</style>
+<ol type="i">
+    <li>List Item 1</li>
+    <li>List Item 2</li>
+    <li>List Item 3</li>
+    <li>List Item 4</li>
+    <li>List Item 5</li>
+    <li>List Item 6</li>
+</ol>
+<ul type="square">
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+    <li>List Item</li>
+</ul>
+<dl>
+    <dt>HTML</dt>
+    <dd>HTML is the standard markup language for Web pages.
+
+        With HTML you can create your own Website.
+        
+        HTML is easy to learn - You will enjoy it!</dd>
+</dl>
+
+
+<table border="1px">
+    <colgroup>
+        <col span="2" style="background-color: aqua;" />
+        <col style="background-color: blue;" />
+    </colgroup>
+    <caption>Student Marksheet</caption>
+    <tr>
+        <th colspan="2">Student Name</th>
+        <th rowspan="2">Course</th>
+    </tr>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+       
+    </tr>
+    <tr>
+        <td>Akash</td>
+        <td>Soni</td>
+        <td>MCA</td>
+    </tr>
+    <tr>
+        <td>Akash</td>
+        <td>Soni</td>
+        <td>MCA</td>
+    </tr>
+    <tr>
+        <td>Akash</td>
+        <td>Soni</td>
+        <td>MCA</td>
+    </tr>
+    <tr>
+        <td>Akash</td>
+        <td>Soni</td>
+        <td>MCA</td>
+    </tr>
+</table>
+
+<form>
+    <input type="" />
+</form>
+
+<form>
+    <input />
+    <button></button>
+    <textarea></textarea>
+    <label>Hello</label>
+    <formgroup></formgroup>
+</form>
+
+
+<br><br>
+<form method="get" action="welcome.php">
+    <input type="text" name="username">
+    <input type="email" name="email" />
+    <button type="submit">Login</button>
+</form>
+
+<form>
+
+
+<fieldset>
+    <legend>HTML Input Tags:</legend>
+    <!--text fields-->
+    <input type="text" name="name_inp" id="name_txt" class="textbox"/>
+    <input type="url" />
+    <input type="search" />
+    <input type="password" />
+    <input type="number" />
+    <input type="email" />
+    <textarea rows="10" cols="50"></textarea><br><br>
+
+    <!-- date/time -->
+    <input id="date-picker" type="date" name="date">
+    <input type="datetime-local">
+    <input type="datetime" >
+    <input type="month">
+    <input type="week">
+    <input type="time"><br><br>
+
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2,'0');
+        var mm = String(today.getMonth()+1).padStart(2,'0');
+        var yyyy = today.getFullYear();
+        today = yyyy + '-' + mm + '-' + dd;
+        document.getElementById('date-picker').setAttribute('value',today);
+    </script>
+
+    <!--check box-->
+    <input name="chk1" type="checkbox">
+    <input name="chk2" type="checkbox">
+
+    <!-- radiobtn -->
+    <input name="gender" type="radio" value="male"><label>Male</label>
+    <input name="gender" type="radio" value="female"><label>Female</label>
+    <input name="gender" type="radio" value="others"><label>Others</label>
+
+    <!-- selectors -->
+    <input type="color">
+    <input type="file">
+    <input type="image" src="list.png" alt="Submit" width="48" height="48">
+    <input type="range" min="0" max="10">
+
+    <input type="button" />
+    <input type="submit" value="3234"/>
+    <input type="reset" />
+
+    <button type="submit">LOHIN</button>
+</fieldset>
+</form>
+</html>

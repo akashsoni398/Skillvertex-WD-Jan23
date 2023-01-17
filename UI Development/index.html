@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Hub</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif
+        }
+        #header {
+            background-color: black;
+            text-align: right;
+        }
+        #header>a {
+            color:white;
+            text-decoration: none;
+            display: inline-block;
+            margin-right: 15px;
+            font-size: 13px;
+        }
+        #dropdown {
+            display: inline-block; 
+            position: relative;
+        }
+        #dropdown-btn {
+            border: none;
+            background-color: green;
+            color: white;
+            padding: 10px 30px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+        #dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            white-space: nowrap;
+            background-color: gray;
+            padding: 5px;
+        }
+        #dropdown-content a {
+            display: block;
+            padding: 15px;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <a href="./legal/privacy.html">Privacy Policy</a>
+        <a href="./legal/tnc.html">Terms and Conditions</a>
+        <div id="dropdown">
+            <button id="dropdown-btn">Login</button>
+            <div id="dropdown-content">
+                <a href="./authentication/login.html">Login into existing account</a>
+                <a href="./authentication/register.html">Create a new account</a>
+            </div>
+        </div>
+    </header>
+    <section id="branding">
+        <div class="left-align-containers">
+            <img src="./assets/img/logo.gif"/>
+            <h1>MUSIC HUB</h1>
+            <p>--------------------------------------------------<br />One stop shop for all your musical needs</p>
+
+        </div>
+        <div class="right-align-containers">
+            <form action="search.html" method="get">
+                <input type="search" />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <nav id="menubar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./hits.html">Top Hits</a></li>
+            <li><a href="./recent.html">Recently Added</a></li>
+            <li><a href="./favs.html">Favourites</a></li>
+            <li><a href="./playlists.html">Playlists</a></li>
+            <li><a href="./about.html">About us</a></li>
+        </ul>
+    </nav>
+    <section id="web-content">
+
+    </section>
+    <footer id="footer"></footer>
+</body>
+</html>
