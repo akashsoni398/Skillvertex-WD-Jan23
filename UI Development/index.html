@@ -5,49 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Hub</title>
+    <link rel="stylesheet" href="./assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            font-family:Verdana, Geneva, Tahoma, sans-serif
-        }
-        #header {
-            background-color: black;
-            text-align: right;
-        }
-        #header>a {
-            color:white;
-            text-decoration: none;
-            display: inline-block;
-            margin-right: 15px;
-            font-size: 13px;
-        }
-        #dropdown {
-            display: inline-block; 
-            position: relative;
-        }
-        #dropdown-btn {
-            border: none;
-            background-color: green;
-            color: white;
-            padding: 10px 30px;
-            font-size: 17px;
-            font-weight: bold;
-        }
-        #dropdown-content {
-            display: none;
-            position: absolute;
-            right: 0;
-            white-space: nowrap;
-            background-color: gray;
-            padding: 5px;
-        }
-        #dropdown-content a {
-            display: block;
-            padding: 15px;
-            color: white;
-            text-decoration: none;
-        }
+        
     </style>
 </head>
 <body>
@@ -63,16 +24,15 @@
         </div>
     </header>
     <section id="branding">
-        <div class="left-align-containers">
+        <div class="left-align containers">
             <img src="./assets/img/logo.gif"/>
             <h1>MUSIC HUB</h1>
-            <p>--------------------------------------------------<br />One stop shop for all your musical needs</p>
-
+            <p>-------------------------------------------------------<br />One stop shop for all your musical needs</p>
         </div>
-        <div class="right-align-containers">
-            <form action="search.html" method="get">
+        <div class="right-align containers">
+            <form id="search-form" action="search.html" method="get">
                 <input type="search" />
-                <button type="submit">Submit</button>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
             </form>
         </div>
     </section>
@@ -89,6 +49,7 @@
     <section id="web-content">
 
     </section>
-    <footer id="footer"></footer>
+    <footer style="position: relative;" id="footer"></footer>
+    
 </body>
 </html>
