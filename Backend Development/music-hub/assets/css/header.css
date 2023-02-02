@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+#header {
+    background-color: black;
+    text-align: right;
+}
+#header>a {
+    color:white;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 13px;
+}
+#dropdown {
+    display: inline-block; 
+    position: relative;
+}
+#dropdown-btn {
+    border: none;
+    background-color: green;
+    color: white;
+    padding: 10px 30px;
+    font-size: 17px;
+    font-weight: bold;
+}
+#dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    white-space: nowrap;
+    background-color: gray;
+    z-index: 100;
+}
+#dropdown-content a {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+#dropdown:hover #dropdown-content {
+    display: block;
+}
+#dropdown-content a:hover {
+    background-color: rgb(82, 82, 82);
+}
+img[src="./assets/img/logo.gif"] {
+    height: 150px;
+    width: 150px;
+}
+#branding {
+    height: 150px;
+    background-color: #fcc915;
+    position: relative;
+    z-index: 0;
+}
+.containers {
+    position: absolute;
+    top: 0;
+}
+.right-align {
+    right: 0;
+}
+.left-align {
+    left:0;
+}
+#branding h1 {
+    position: absolute;
+    top:10px;
+    left: 160px;
+    font-family: fantasy;
+    font-size: 75px;
+    white-space: nowrap;
+    font-weight: normal;
+}
+#branding p {
+    position: absolute;
+    top:90px;
+    left: 160px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18.2px;
+    white-space: nowrap;
+}
+#search-form {
+    position: relative;
+    right: 0;
+    width: 250px;
+    margin-right: 40px;
+    margin-top: 60px;
+}
+#search-form input {
+    position: absolute;
+    height: 30px;  
+    width: 250px;
+    padding: 0px 23px 1px 5px ;
+}
+#search-form button {
+    position: absolute;
+    height: 30px; 
+    right: 0px; 
+    width: 30px;
+    border: none;
+    background-color: transparent;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color: #333;
+}
+nav ul li {
+    list-style-type: none;
+}
+nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 10px;
+    white-space: nowrap;
+}
