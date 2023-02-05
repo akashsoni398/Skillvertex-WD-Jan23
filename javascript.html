@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Hello World</p>
+    <p>This is <span id="name">Akash Soni</span></p>
+    <button on ondblclick="output()">Click me!</button>
+    <script>
+        // single line comment
+
+        /* multiple
+        line
+        comment */
+
+        //variable declaration
+        var a;        
+
+        //variable initialization - var,let,const
+        var x = 43;
+        let y = "Akash Soni";
+        const z = true;
+
+        // datatypes
+        let str = "Text";   //string
+        let num = '344';    //number
+        let num2 = 24453;
+        let bool = true;    //boolean
+        let bool2 = false;
+
+        let dec;            //undefined
+        let emp = "";       //null
+
+        let arr = [232,"fsdsdfsdf",true]    //array
+        let obj = {                         //object
+            name: {
+                first:"Akash",
+                last:"Soni"
+            },
+            age:24
+        }
+
+        //output
+        const output = () => {
+            document.getElementById('name').innerText = "<b>Akash Soni</b>"
+            document.write("Hi there!");
+            window.alert('This is a warning');
+            console.log("This is a debug script");
+            window.print();
+        }
+       
+    </script>
+</body>
+</html>
